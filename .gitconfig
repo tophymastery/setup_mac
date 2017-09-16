@@ -59,7 +59,7 @@
   caa = commit -a --amend -C HEAD
   # }}}
   # log commands {{{
-  ls = log --pretty=format:'%C(green)%h %C(green dim)[%ad]%C(red bold)%d %Creset%s%C(ul dim) [%an]' --decorate --date=relative
+  ls = log --pretty=format:'%C(green)%h %C(green dim)[%ad] %Creset %C(red)%h%d %Creset%s%C(ul dim) [%an]' --decorate --date=relative
   lsg = log --graph --all --pretty=format:'%C(green)%h%Creset -%C(auto)%d%Creset %s %C(green dim)(%cr)%Creset %C(ul dim)<%an>'
   ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [a:%an,c:%cn]" --decorate --numstat
   lc = "!f() { git ll "$1"^.."$1"; }; f"
